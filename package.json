@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@chainlink/functions-toolkit": "^0.2.8",
+    "deno": "^0.1.1",
+    "dotenv": "^16.4.5",
+    "prettier": "^3.2.5"
+  },
+  "scripts": {
+    "simulate": "export $(cat .env) && node ./functions/simulators/alpacaMintSimulator.js",
+    "mint": "node ./functions/simulators/alpacaMintSimulator.js",
+    "redeem": "node ./functions/simulators/alpacaRedeemSimulator.js",
+    "uploadSecrets": "node ./functions/uploadSecrets.js"
+  }
+}
